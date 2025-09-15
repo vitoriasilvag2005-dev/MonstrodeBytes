@@ -86,9 +86,9 @@ jobs:
           path: battle_logs/
 
       - name: Exibir mensagem final de sucesso
-        if: ${{sucess()}}
-            run: |
-              echo "CI executado com sucesso!"
-              echo "Robo compilado, verificado com Checkstyle e analisado com SpotBugs"
-              echo "Arquivo usado: PrimeiroRobo.java"
-              echo "Parabens, pipeline completa e aprovada!"
+        if: ${{ success() }}
+        run: |
+          echo "CI executado com sucesso!"
+          echo "Robo compilado, verificado com Checkstyle e analisado com SpotBugs"
+          echo "Arquivo usado: PrimeiroRobo.java"
+          echo "Parabéns, pipeline completa e aprovada!"
