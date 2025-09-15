@@ -72,6 +72,10 @@ cat >> "$REPORT_HTML" <<EOF
   </pre>
   <hr>
   <small>Relatório gerado automaticamente em $(date '+%d/%m/%Y %H:%M')</small>
+   <footer>
+    Relatório gerado automaticamente em $(date '+%d/%m/%Y %H:%M') <br>
+    © Vitoria Gabriela — Todos os direitos reservados
+  </footer>
 </body>
 </html>
 EOF
